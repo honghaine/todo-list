@@ -4,15 +4,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Install Dependencies:
+Run npm install in your project directory to install all the required dependencies. This step is crucial before you start your development server for the first time or whenever you add new dependencies.
+
+Start the Development Server:
+
+Use npm run dev to start the Next.js development server.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
