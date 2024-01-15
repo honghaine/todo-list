@@ -38,7 +38,7 @@ const TaskList = ({ updateTask, tasks, deleteTask, toggleStatus, filter }) => {
                     <div className="flex justify-between gap-10 ">
                         <div className="Pending flex-1">
                             <h2 className="text-center text-2xl mb-4">Pending Tasks</h2>
-                            {filter == 'finished' &&
+                            {filter == 'pending' &&
                                 <div className='space-y-4 flex justify-center'>
                                     <ul className="">
                                         {tasks.filter((task, index) => { return task.completed === false }).map((task, index) => (
@@ -70,7 +70,7 @@ const TaskList = ({ updateTask, tasks, deleteTask, toggleStatus, filter }) => {
                         <div className="w-px bg-gray-400 hidden md:block" />
                         <div className="Completed flex-1">
                             <h2 className="text-center text-2xl mb-4">Completed Tasks</h2>
-                            {filter == 'pending' &&
+                            {filter == 'finished' &&
                                 <div className='space-y-4 flex justify-center'>
                                     <ul className="w-[668px]">
                                         {tasks.filter((task, index) => { return task.completed === true }).map((task, index) => (
