@@ -1,0 +1,24 @@
+.task-completed {
+    position: relative;
+    color: #555; /* Gray out the text */
+  }
+  
+  .task-completed::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: #555; /* Match the text color */
+    transition: all 0.3s ease; /* Smooth transition for the line */
+  }
+  
+  .task-completed.completed {
+    color: #bbb; /* Lighter color for completed tasks */
+  }
+  
+  .task-completed.completed::after {
+    width: 100%; /* Full width for the line-through effect */
+  }
+  
